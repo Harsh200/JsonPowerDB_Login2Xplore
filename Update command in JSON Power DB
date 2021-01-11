@@ -1,0 +1,40 @@
+Update multiple records in the database or add a new column in a record
+to insert, update and delete Json data: JPDB Index Manipulation Language
+
+Http method : POST
+Base url : http://api.login2explore.com:5577
+End-point url : /api/iml
+
+Syntax:
+{
+    "token": <"connection-token">,
+    "cmd": "UPDATE",
+    "dbName": <"database-name">,
+    "rel": <"relation-name">,
+    "jsonStr": {
+        <"recordNo">: {
+            <"ColumnName": "NewJsonValue">|<"New-ColumnName": "New-Column-Value">
+        }
+        <"recordNo">: {
+            <"ColumnName": "NewJsonValue">|<"New-ColumnName": "New-Column-Value">
+        }
+    }
+}
+
+
+Example 1:
+{
+    "token": "90937247|-31948794029115869|90932776",
+    "cmd": "UPDATE",
+    "dbName": "Emp",
+    "rel": "index",
+    "jsonStr":{
+      "1":{
+        "name": "Harsh Kr Saxena"
+    }
+    }
+}
+
+
+Output:
+{"data":"{\"1\":{\"name\":\"Harsh Kumar Saxena\"},\"NewIndexColumnCreated\":0,\"NewNonIndexColumnCreated\":0}","additionalData":{"processReqType":0,"dbUpdateFlag":true},"message":"Success","status":200}
