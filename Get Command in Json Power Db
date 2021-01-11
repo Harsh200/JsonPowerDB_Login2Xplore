@@ -1,0 +1,27 @@
+Retrieve single record by json data (Deprecated use GET_BY_KEY instead of GET)
+To retrieve Json data.: JPDB Index Retrieval Language
+Http method : POST
+Base url : http://api.login2explore.com:5577
+End-point url : /api/irl
+
+Syntax for GET:
+{
+    "token": <"connection-token">,
+    "cmd": "GET",
+    "dbName": <"database-name">,
+    "rel": <"relation-name">,
+    "jsonStr": {
+        <"ColumnName":"JsonValue">
+    }
+}
+
+Example: 
+{
+    "token": "90937247|-31948794029115869|90932776",
+    "cmd": "GET",
+    "dbName": "Emp",
+    "rel": "index",
+    "jsonStr":{
+        "name": "Harsh Kumar Saxena"
+    }
+}
