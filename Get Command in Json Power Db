@@ -25,3 +25,7 @@ Example:
         "name": "Harsh Kumar Saxena"
     }
 }
+
+
+Output of the command
+{"data":"INVALID IML COMMAND","message":"{\n    \"token\": \"90937247|-31948794029115869|90932776\",\n    \"cmd\": \"GET\",\n    \"dbName\": \"Emp\",\n    \"rel\": \"index\",\n    \"jsonStr\":{\n        \"name\": \"Harsh Kumar Saxena\"\n    }\n}","status":400}
