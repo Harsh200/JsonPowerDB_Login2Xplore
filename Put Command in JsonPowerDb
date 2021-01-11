@@ -1,0 +1,60 @@
+To insert, update and delete Json data : JPDB Index Manipulation Language is used
+Base url : http://api.login2explore.com:5577
+End-point url : /api/iml
+
+Some important points:
+1-dbName : Optional, if omitted will take the default database-name.
+2-rel : Optional, if omitted will take the default relation-name.
+3-templateStr : Optional, can be used to create specified indexes else the first row of data (jsonStr) will decide the number columns indexed.
+4-colsAutoIndex : Optional, can be used to automatically index all the new columns (default true).
+
+
+Synatx:
+{
+    "token": <"connection-token">,
+    "cmd": "PUT",
+    <<"dbName": <"database-name">,>>
+    <<"rel": <"relation-name">,>>
+    <<"colsAutoIndex": <boolean-value>,>>
+    <<"templateStr": <jsonTemplateStr>,>>
+    "jsonStr": <jsonDataStr>
+}
+
+
+Example 1 :
+{
+    "token": 90937247|-31948794029115869|90932776",
+    "cmd": "PUT",
+    "dbName": "Employee",
+    "rel": "index",
+    "colsAutoIndex": true,
+    "templateStr": {
+        "name": "Sulbha Mishra"
+    },
+    "jsonStr": {
+        "name": "Sulbha Mishra",
+        "email": "sulbhamishra@gmail.com",
+      
+
+    }
+}
+
+
+Example 2:
+
+{
+    "token": 90937247|-31948794029115869|90932776",
+    "cmd": "PUT",
+    "dbName": "Employee",
+    "rel": "index",
+    "colsAutoIndex": true,
+    "templateStr": {
+        "name": "Sulbha Mishra"
+    },
+    "jsonStr": {
+        "name": "Harsh Kumar Saxena",
+        "email": "harshkumarsaxena@gmail.com",
+      
+
+    }
+}
