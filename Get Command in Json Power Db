@@ -28,4 +28,4 @@ Example:
 
 
 Output of the command
-{"data":"INVALID IML COMMAND","message":"{\n    \"token\": \"90937247|-31948794029115869|90932776\",\n    \"cmd\": \"GET\",\n    \"dbName\": \"Emp\",\n    \"rel\": \"index\",\n    \"jsonStr\":{\n        \"name\": \"Harsh Kumar Saxena\"\n    }\n}","status":400}
+{"data":"{\"name\":\"Harsh Kumar Saxena\",\"email\":\"harshkumarsaxena87@gmail.com\"}","message":"DATA_HAS_BEEN_RETRIEVED_FROM_PI","status":200}
