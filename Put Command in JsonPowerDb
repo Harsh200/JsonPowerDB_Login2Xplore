@@ -25,12 +25,9 @@ Example 1 :
 {
     "token": 90937247|-31948794029115869|90932776",
     "cmd": "PUT",
-    "dbName": "Employee",
+    "dbName": "Emp",
     "rel": "index",
     "colsAutoIndex": true,
-    "templateStr": {
-        "name": "Sulbha Mishra"
-    },
     "jsonStr": {
         "name": "Sulbha Mishra",
         "email": "sulbhamishra@gmail.com",
@@ -45,12 +42,8 @@ Example 2:
 {
     "token": 90937247|-31948794029115869|90932776",
     "cmd": "PUT",
-    "dbName": "Employee",
+    "dbName": "Emp",
     "rel": "index",
-    "colsAutoIndex": true,
-    "templateStr": {
-        "name": "Sulbha Mishra"
-    },
     "jsonStr": {
         "name": "Harsh Kumar Saxena",
         "email": "harshkumarsaxena@gmail.com",
