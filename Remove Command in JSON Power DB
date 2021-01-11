@@ -1,0 +1,27 @@
+ Remove records from the database
+ To insert, update and delete Json data:  JPDB Index Manipulation Language
+ 
+Http method : POST
+Base url : http://api.login2explore.com:5577
+End-point url : /api/iml
+
+Synatx:
+{
+    "token": <"connection-token">,
+    "cmd": "REMOVE",
+    "dbName": <"database-name">,
+    "rel": <"relation-name">,
+    "record": <record_number | [recNo1, recNo2....]>
+}
+
+Example 1:
+{
+    "token": "90937247|-31948794029115869|90932776",
+    "cmd": "REMOVE",
+    "dbName": "Emp",
+    "rel": "index",
+  "record":2
+}
+
+output:
+{"data":"{\"removedRecNos\":[2],\"alreadyRemovedRecNos\":[],\"invalidRecNos\":[]}","additionalData":{"processReqType":0,"dbUpdateFlag":true},"message":"Success","status":200}
